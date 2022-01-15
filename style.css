@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+ 
+}
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  font-size: 2rem;
+  color: hsl(0, 0%, 95%);
+  text-transform: uppercase;
+  padding: 20px 0px;
+}
+p {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  font-weight: lighter;
+  padding-right: 25px;
+  
+  margin-bottom: 20px;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+svg {
+  margin-bottom: 20px;
+}
+.outer {
+  padding: 50px 20px;
+  margin: 0px auto;
+  width: 100%;
+  background: hsl(0, 0%, 95%);
+}
+.card-1 {
+  width: 100%;
+  padding: 50px;
+  background: hsl(31, 77%, 52%);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 10px;
+}
+
+.card-2 {
+  width: 100%;
+  padding: 50px;
+  background: hsl(184, 100%, 22%);
+}
+.card-3 {
+  width: 100%;
+  padding: 50px;
+  background: hsl(179, 100%, 13%);
+  border-bottom-right-radius:10px;
+  border-bottom-left-radius:10px;
+}
+button {
+  margin: 10px 0px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  height: 50px;
+  width: 150px;
+  text-align: center;
+  font-family: "Lexend Deca", sans-serif;
+  background: hsl(0, 0%, 95%);
+}
+
+.btn-1{
+  color: hsl(31, 77%, 52%);;
+}
+.btn-2{
+  color:hsl(184, 100%, 22%) ;
+}
+.btn-3{
+  color: hsl(179, 100%, 13%);}
+
+button:hover{
+  background: none;
+  border: 2px solid hsl(0, 0%, 95%) ;
+  color:  hsl(0, 0%, 95%);
+}
+  
+
+
+
+  
+  
+@media only screen and (min-width: 720px){
+ 
+   body{
+     width: 100vw;
+     height: 100vh;
+   }
+   .outer{
+   padding: 75px 200px;
+   display: flex;
+ }
+  
+  p{
+    padding-right: 10px;
+  }
+  .card-1{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+  .card-3{
+    border-top-left-radius:0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}
