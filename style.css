@@ -26,7 +26,7 @@ p {
   color: hsla(0, 0%, 100%, 0.75);
 }
 svg {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .outer {
   padding: 50px 20px;
@@ -34,9 +34,12 @@ svg {
   width: 100%;
   background: hsl(0, 0%, 95%);
 }
-.card-1 {
+.card{
   width: 100%;
   padding: 50px;
+}
+.card-1 {
+  
   background: hsl(31, 77%, 52%);
   border-top-left-radius: 10px;
   border-bottom-left-radius: 0px;
@@ -45,13 +48,9 @@ svg {
 }
 
 .card-2 {
-  width: 100%;
-  padding: 50px;
   background: hsl(184, 100%, 22%);
 }
 .card-3 {
-  width: 100%;
-  padding: 50px;
   background: hsl(179, 100%, 13%);
   border-bottom-right-radius:10px;
   border-bottom-left-radius:10px;
@@ -67,10 +66,12 @@ button {
   text-align: center;
   font-family: "Lexend Deca", sans-serif;
   background: hsl(0, 0%, 95%);
-}
 
+  bottom: 0;
+  left: 0;
+}
 .btn-1{
-  color: hsl(31, 77%, 52%);;
+  color: hsl(31, 77%, 52%);
 }
 .btn-2{
   color:hsl(184, 100%, 22%) ;
@@ -83,25 +84,24 @@ button:hover{
   border: 2px solid hsl(0, 0%, 95%) ;
   color:  hsl(0, 0%, 95%);
 }
-  
-
-
-
-  
-  
-@media only screen and (min-width: 720px){
- 
-   body{
-     width: 100vw;
-     height: 100vh;
-   }
-   .outer{
-   padding: 75px 200px;
-   display: flex;
- }
-  
-  p{
-    padding-right: 10px;
+@media only screen and (min-width: 768px) {
+  .outer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-content: center;
+    height: 95vh;
+    padding: 0vh 12vw;
+  }
+  h1{
+    font-size: 3rem;
+  }
+  .card{
+    
+    padding: 50px 40px 30px 50px;
+  }
+  button{
+    margin-bottom: 2vh;
   }
   .card-1{
     border-top-left-radius: 10px;
@@ -110,9 +110,11 @@ button:hover{
     border-top-right-radius: 0px;
   }
   .card-3{
-    border-top-left-radius:0px;
-    border-bottom-left-radius: 0px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
   }
 }
+
+  
